@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatable" content='ie-edeg'>
+	<title>Books</title>
+	<script src="bootstrap/jQuery.min.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="bootstrap/jQuery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<style>
+		@import url(http:://fonts.googleapis);
+
+
+		* {
+			box-sizing:border-box;
+		}
+
+  header,section {
+  	     overflow-x:hidden;
+  }
+
+:root{
+	--single-font:"sniglet",cursive;
+    --Rubik:'Rubik',cursive;
+    --Patua:"Patua One",cursive;
+    --Lobster:'Lobster',cursive;
+    --light-black:#2e2c2eaf;
+    --bggradient:linear-gradient(to bottom left,#dd2476 , #ff512f);
+    --light-gray:rgba(255,255,255,0);
+}
+
+header {
+	font-family:var(--lobster);
+}
+header a {
+   font-family:var(--Single-font);
+   font-size:0.9em;
+   color:whitesmoke;
+}
+header {
+	background:#dd2476;
+	background:var(--bggradient);
+}
+.dropdown-content{
+	display:none;
+	position:absolute;
+	background:white;
+	min-width:160px;
+	box-shadow:0px 2px 15px 0px rgba(0,0,0,0.2);
+	z-index:1;
+}
+.dropdown-content a{
+	color:black;
+	padding:12px 16px;
+	text-decoration:none;
+	display:block;
+}
+.dropdown-content  a:hover {
+	background:#ddd;
+}
+.dropdown:hover .dropdown-content {
+display:block;
+}
+header .nav-item:last-child  {
+     padding-right:10.5rem;
+}
+header .nav-item {
+	padding:0.9em;
+}
+header .navbar-brand {
+	padding-left:0.8rem;
+}
+header .nav-link:hover {
+      color:black;
+}
+header .row .col-md-5  {
+       padding:4.2vmin 1vmin;
+}
+header .row .col-md-7 {
+       padding:22vmin 1vmin;
+       padding-bottom:35vmin;
+       font-family:var(--rubik);
+       color:white;
+}
+header .row .col-md-5  img {
+	width:90%;}
+
+
+header .container .col-md-7 h6 {
+     padding:1vmin;
+     letter-spacing:4px;
+}
+header .container .col-md-7 h1 {
+     font-size:8.5vmin;
+     font-weight:bold;
+     padding:0.1em 0em;
+}
+header .container .col-md-7 p  {
+       padding:1vmin 5vmin;
+}
+header .container .col-md-7 button {
+	border-radius: 30px;
+	font-weight:bold;
+
+}
+.section-1 {
+	padding:20vmin 0;
+}
+.section-1 .row .col-md-6 .pray img{
+	opacity:0.8;
+	width:80%;
+	border-radius:0.2em;
+}
+.section-1 .row .col-md-6:last-child {
+	position:relative;
+}
+.section-1 .row .col-md-6 .panel {
+	position:absolute;
+	top:7vmin;
+	left:-18vmin;
+	background:white;
+	border-radius:3px;
+	text-align:left;
+	padding:13vmin 5vmin 20vmin 10vmin;
+	box-shadow:0px 25px 42px rgba(0,0,0,0.2);
+	font-family:var(--rubik);
+	z-index:1;
+}
+.section-1 .row .col-md-6 .panel h1 {
+ font-weight:bold;
+ padding:0.4em 0;
+ font-size:2em;
+}
+.section-1 .row .col-md-6 .panel p {
+	font-size:0.9em;
+	color:rgba(0,0,0,0.9);
+}
+/*section 2 */
+.cover {
+	width:100%;
+	height:55vmin;
+	background:url('pic.jpeg');
+	background-position:-25rem -19rem;
+	background-size:150%;
+	position:relative;
+}
+.cover .content {
+background:rgba(0,0,0,0.7);
+height:100%;
+width:100%;
+padding:19vmin;
+}
+.cover .content > h1 {
+	font-family:var(--patua);
+	font-size:6vmin;
+	color:whitesmoke;
+}
+.cover .content > p {
+	font-family:var(--patua);
+	font-size:2vmin;
+	color:#e5e5e5;
+}
+.numbers {
+	margin-top:-15vmin;
+}
+.numbers .rect {
+	position:relative;
+	z-index:1;
+	background:white;
+	width:17rem;
+	height:12rem;
+	padding-top:3.5vmin;
+	margin:1rem;
+	border-radius:.5em;
+	box-shadow:1px 2px 50px 0px rgba(255,0,0,2.349);
+}
+.numbers .rect p{
+	font-family:var(--patua);
+}
+.numbers .rect h1 {
+	font-size:2rem;
+	color:tomato;
+}
+.purchase>h1 {
+	padding-top:15vmin;
+	padding-bottom:0.1em;
+	font-family:var(--lobster);
+}
+.purchase>p {
+	color:var(--lignt-black);
+	font-size:3vmin;
+	padding-bottom:10vmin;
+}
+.purchase.cards.card  {
+	width:22rem;
+	margin:3vmin;
+}
+.cards div {
+	padding:0;
+	margin:0;
+}
+.cards .title  {
+	background:rgba(208,241,241,0.199);
+	padding:1.4rem 2.5rem;
+	font-size:2vmin;
+}
+.card .card-text {
+	padding:2.5rem 3rem;
+	color:var(--lignt-black);
+}
+.card-body .pricing {
+       background:rgba(208,241,241,0.199);
+       border-top-right-radius:170px;
+       border-top-left-radius:170px;     
+}
+.card-body .pricing>h1  {
+	font-size:10vmin;
+	padding:1em 0.5em;
+}
+
+.section-3 {
+	height:70vmin;
+	margin-top:50vmin;
+	background:var(--bggradient);
+}
+.section-3 .col-md-12>h1  {
+   padding:2em 0 0.5em 0;
+   color:whitesmoke;
+   font-size:6vmin;
+}
+.section-3 .col-md-12>h1  {
+   padding:4em;
+   padding-bottom:2em;
+   color:var(--lignt-gray);
+   font-size:3vmin;
+}
+.section-3 .desktop  {
+	background:white;
+	display:inline-block;
+	border-radius:3em;
+	padding:2vmin 4.5vmin;
+	margin:1em;
+}
+.section-3 .desktop h3 {
+	  font-size:4vmin;
+}
+.section-3 .desktop p {
+	  font-size:3vmin;
+}
+.section-4 .card {
+	width:22rem;
+	margin-width:10vmin;
+}
+.section-4 .card .card-text {
+	font-size:0.5em;
+}
+.section-4  .carousel-item {
+	padding-left:3rem;
+}
+
+.border-radius {
+	border-radius:340px;
+	width:60%;
+}
+footer {
+	background:rgba(0,0,0,0.815);
+	overflow:hidden;
+	padding:14vmin 18vmin;
+
+}
+ footer h1 {
+ 	 color:white;
+ }
+footer p> span {
+	color:#ff512f;
+}
+footer input  {
+	border:none !important;
+}
+footer input::placeholder{
+	color:white !important;
+
+}
+footer .input-group .input-group-text {
+	background:var(--bggradient);
+	border:none;
+}
+footer .column i {
+	color:#dd2476;
+
+}
+footer .column i+ i {
+	padding:0 0.5em;
+}
+
+.sticky {
+	position:fixed;
+	top:0;
+	width:100%;
+	background:rgba(0,0,0,0.815);
+	z-index:999;
+	transition:all 1.5s ease;
+
+
+}
+
+
+
+
+
+</style>
+<style> 
+
+@media only screen and (max-width)  {
+	header .navbar-brand {
+		padding-left:1rem;
+	}
+	.section-1 .row .col-md-6 .panel {
+		position:initial;
+		width:initial;
+		height:initial;
+	}
+	.section-2 .cover  {
+		background-position:-25vmin -10vmin;
+	}
+	.numbers .rect {
+		width:10rem;
+		height:8rem;
+	}
+	.numbers .rect h1 {
+		font-size:2rem;
+	}
+	.section-3 {
+		height:inherit;
+		padding:10vmin !important;
+	}
+	.secttion-3 .row  h1 {
+		padding:6vmin 4vmin;
+	}
+	.section-3 .row .col-md-6  {
+		text-align:center !important;
+	}
+	.section-3 .desktop {
+		font-size:8vmin;
+	}
+	.section-4 .carousel-item  {
+		padding-left:0.6rem;
+	}
+	.section-4 .team  {
+		display:flex;
+		flex-direction:column;
+		align-content:center;
+	}
+	.section-4 .carousel-inner  {
+		width:24rem;
+	}
+} 
+
+@media only screen (max-width:425px)  {
+	footer .row .col-md-2  {
+		margin-top:8vmin;
+	}}
+@media only screen (max-width:320px)  {
+      .section-4  .card {
+      	width:18rem;
+      }
+        .section-4 .carousel-inner {
+        	margin-left:14vmin;
+        }
+}
+</style>
+
+<header>
+<div class="container-fluid p-0">
+	<nav class="navbar navbar-expand-lg ">
+		<a class="navbar-brand" href="#">  <i class='fas fa-book-reader fa-3x mx-3'></i>   N I T I N</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" arial-label="Toggle navigation">
+			<i class='fas fa-align-right text-light'></i>
+			 </button>
+			 <div class="collapse navbar-collapse" id="navbarNav">
+		<div class="mr-auto"></div>
+  <ul class="navbar-nav">
+    <li class="nav-item active">
+      <a class="nav-link" href="#">Books</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Course</a>
+    </li>
+    <li class="nav-item  dropdown">
+    	<div class='dropdown'>
+    		<a href="#" class="nav-link">pricing</a>
+    		<div class="dropdown-content">
+    			<a href="#">Generic</a>
+    			<a href="#">Element</a>
+    		
+    		</div>
+    	</div>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Pages</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">Facts</a>
+    </li>
+     <li class="nav-item">
+      <a class="nav-link" href="#">About</a>
+    </li>
+  </ul>
+</nav>
+</div>
+<div class="container text-center">
+	  <div class="row">
+		  <div class="col-md-7 col-sm-12">		
+             <h6>Author:Nitin Neryal</h6>
+             <h1> HIP-HOP aritist's </h1>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint delectus quaerat impedit eius ratione amet ut dolore, iste recusandae animi.</p>
+              <button class="btn  btn-light px-5 py-2"> click here for more updates</button>
+          </div>
+			<div class="col-md-5 col-sm-12 h-25">
+				<img src="microphone.jpg" alt="hello">
+			</div>
+	  </div>
+</div>
+</div>
+</header>
+<main>
+	<section class="section-1">
+	    <div class="container  text-center">
+
+         <div class="row">
+         	<div class="col-md-6">
+         	 <div class="pray">
+         	 	<img src="microphone.jpg" alt="">
+         	 </div>	
+
+         	</div>
+         	<div class="col-md-6">
+         	<div class="panel text-left">
+         		<h1>Rappers in Underground</h1>
+         	<p class="pt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Et quibusdam architecto vitae eos fuga adipisci impedit cumque temporibus accusamus, asperiores error eligendi ratione maiores unde.</p>
+         		<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias eum ducimus sit voluptate iste tempora beatae minima voluptatibus. Consequuntur non excepturi dolores culpa a fuga dolorem sit, obcaecati eos maxime consectetur quaerat saepe labore! Cumque laboriosam laudantium voluptate ea sequi.</p>
+         	</div>
+           	</div>	
+            </div>
+	     </div>
+	</section>	
+	<section class="section-2 container-p0"> 
+		<div class="cover">
+			<div class="content text-center">
+				<h1>Our SKILLS  make us unique</h1>
+				<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Error, tenetur.</p>
+			</div>
+		</div>
+         		<div class="container-fluid text-center">
+         			<div class="numbers d-flex flex-md-row flex-wrap justify-content-center">
+         				<div class="rect"> <h1>Writers</h1>
+         					<p>if u write bars strong enough</p>
+         				</div>
+
+         				<div class="rect"><h1>Producers</h1>
+         					<p>if u got some meledies with kicks & snares</p>
+         				</div>
+
+         				<div class="rect">
+         					<h1>Rapers</h1>
+         					<p>come with amazing flow and delivery</p>
+         				</div>
+
+         				<div class="rect"><h1>VideoGraphers</h1>
+         					<p>if u got real videography skills </p></div>	
+         			    </div>
+         		</div>
+
+
+          <div class="purchase text-center">
+          	<h1>Collab with the artists u Feel comfortable with</h1>
+          	<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis, magni.</p>
+          	<div class="cards">
+          		<div class="d-flex flex-row justify-content-center flex-wrap">
+          			<!-- first card -->
+          			<div class="card m-auto">
+          				<div class="card-body">
+          					<div class="title">
+          						<h5 class='car-title'></h5>
+          					</div>
+          					<p class="card-text"> sliver entery coupon for week </p>
+          					<div class="pricing"><h1>$89.99</h1></div>
+          					<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+          				</div>
+          			</div>
+          			 <!-- second card -->
+          			<div class="card m-auto">
+          				<div class="card-body">
+          					<div class="title">
+          						<h5 class='car-title'></h5>
+          					</div>
+          					<p class="card-text"> golden membersip for 2 months </p>
+          					<div class="pricing"><h1>$159.99</h1></div>
+          					<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+          				</div>
+          			</div>
+          			              <!-- third card -->
+          			<div class="card m-auto">
+          				<div class="card-body">
+          					<div class="title">
+          						<h5 class='car-title'></h5>
+          					</div>
+          					<p class="card-text"> platinum membership for 4 months</p>
+          					<div class="pricing"><h1>$278.99</h1></div>
+          					<a href="#" class="btn btn-dark px-5 py-2 mb-5">purchase now</a>
+          				</div>
+          			</div>
+          		</div>
+          		
+          	</div>
+          </div>
+
+
+	</section>
+	<section class="section-3 container-fluid p-0 text-center">
+	   <div class="row">
+	   	<div class="col-md-12 col-sm-12">
+	   	<h1>download our app for all platsforms</h1>
+	   	<p>Lorem ipsum dolor sit amet consectetur, adipisicing, elit. In maiores, itaque vitae dolorem, illo magnam error repellat odio perferendis consectetur excepturi dignissimos, vel? Quasi, consectetur.</p>	 
+	   	</div> 
+	   </div>
+	  <div class="platform row">
+	   	<div class="col-md-6 col-sm-12 text-right">
+	   	<div class="desktop shadow-lg">
+	   		<div class="d-flex flex-row justify-content-center">
+	   			<i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+	   			<div class="text  text-left">
+	   			<h3 class="pt-1 m-0">Desktop</h3>
+	   			<p class="p-0 m-0">on Website</p>
+	   			</div>		
+	   		</div>
+	   	</div>
+
+	   </div>
+	    <div class="col-md-6 col-sm-12 text-left">
+	    		<div class="desktop shadow-lg">
+	   		<div class="d-flex flex-row justify-content-center">
+	   			<i class="fas fa-mobile fa-3x py-2 pr-3"></i>
+	   			<div class="text  text-left">
+	   			<h3 class="pt-1 m-0">Mobile</h3>
+	   			<p class="p-0 m-0">on playstore</p>
+	   			</div>		
+	   		</div>
+	   	</div>
+	    </div>
+	   </div>
+ 
+	</section>
+
+<section class="section-4">
+	  <div class="container text-center">
+	  	<h1 class="text-dark">What our reader's say about us</h1>
+	  	<p class='text-secondary'>Lorem ipsum dolor sit amet.</p>
+	  </div>
+	  <div class="team row">
+	  	<div class="col-md-4 col-12 text-center">
+	  		<div class="card mr-2 d-inline-block shadow-lg">
+	  			<div class="card-img-top">
+	  				<img src="12308441_532345023603171_2498361644938852645_n.jpg" alt="members" class='img-fluid border-radius w-50 p-4'>	  				
+	  			</div>
+	  			<div class="card-body">
+	  				<h3 class="card-title">Nitin neryal</h3>
+	  				<p card='card-text'>  Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Consectetur, delectus ipsum amet pariatur non cupiditate vel autem quos labore. </p>
+	  				<a href="#" class='text-secondary text-decoration-none'>software devolper</a>
+	  				<p class='text-black-50'>CE0 at different type of companies</p>
+	  			</div>
+	  		</div>
+	  	</div>
+	  	<div class="col-md-4">
+	  		<!-- carousel started -->
+	  		<div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+	  			<div class="carousel-inner">
+	  				<div class="carousel-item active text-center">
+	  					<!-- card -2 -->
+	  				  <div class="card mr-2 d-inline-block shadow-lg">
+	  			       <div class="card-img-top">
+	  				<img src="34637626_1732387800177663_7645627036303622144_o.jpg" alt="members" class='img-fluid border-radius w-50 p-4'>	  				
+	  			      </div>
+	  			       <div class="card-body">
+	  				<h3 class="card-title">Golu neryal</h3>
+	  				<p card='card-text'>  Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Consectetur, delectus ipsum amet pariatur non cupiditate vel autem quos labore. </p>
+	  				<a href="#" class='text-secondary text-decoration-none'>software devolper</a>
+	  				<p class='text-black-50'>CE0 at different type of companies</p>
+	  			   </div>
+	  		        </div>	
+	  				</div>
+	  				<div class="carousel-item text-center">
+	  					   <!-- card 3 -->
+	  						  <div class="card mr-2 d-inline-block shadow-lg">
+	  			       <div class="card-img-top">
+	  				<img src="PicsArt_07-28-03.33.27.jpg" alt="members" class='img-fluid border-radius w-50 p-4'>	  				
+	  			      </div>
+	  			       <div class="card-body">
+	  				<h3 class="card-title">NTN neryal</h3>
+	  				<p card='card-text'>  Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Consectetur, delectus ipsum amet pariatur non cupiditate vel autem quos labore. </p>
+	  				<a href="#" class='text-secondary text-decoration-none'>software devolper</a>
+	  				<p class="text-black-50">CE0 at different type of companies</p>
+	  			</div>
+	  		</div>
+	  		</div>
+	  		</div>
+	  		</div>
+	  		</div>
+	  		
+	  	<div class="col-md-4 col-12 text-center">
+	  		<!-- card 4 -->
+	  		  <div class="card mr-2 d-inline-block shadow-lg">
+	  			       <div class="card-img-top">
+	  				<img src="14642105_665450783625927_952583403223495519_n.jpg" alt="members" class='img-fluid border-radius w-50 p-4'>	  				
+	  			      </div>
+	  			       <div class="card-body">
+	  				<h3 class="card-title">NTN neryal</h3>
+	  				<p card='card-text'>  Lorem ipsum dolor, sit, amet consectetur adipisicing elit. Consectetur, delectus ipsum amet pariatur non cupiditate vel autem quos labore. </p>
+	  				<a href="#" class='text-secondary text-decoration-none'>software devolper</a>
+	  				<p class="text-black-50">CE0 at different type of companies</p>
+	  			</div>
+	  		</div>
+	  			</div>
+	  </div>	  
+</section>
+</main>
+<footer>
+	<div class="container-fluid p-0">
+		<div class="row text-left">
+			<div class="col-md-5 col-md-5">
+			<h1 class="text-align">About Us:</h1>
+			<p class="text-muted">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat fugit iure, culpa impedit?
+			</p>
+			<p class="pt-4 text-muted">
+				copyrights &copy;2020 all rights &reg; Lorem, ipsum dolor sit amet consectetur.   <span>hip-hop community</span>
+			</p>	
+		</div>
+		    <div class="col-md-5">
+		    	<h4 class="text-light">News letter</h4>
+		    	<p class="text-muted">Stay Updated</p>
+		    	<form action="" class="form-inline">
+		    		<div class="col-pl-0">
+		    	    <div class="input-group pr-5">
+		    	    	<input type="text" class="form-control bg-dark text-white"
+		    	    	placeholder="email">
+		    	    	<div class="input-group-prepend">
+		    	    		<div class="input-group-text">
+		    	    			<i class="fa fa-arrow-right"></i>
+		    	    		</div>
+		    	    	</div>
+		    	    </div>
+		    		</div>
+		    	</form>
+		    </div>
+		    <div class="col-md-2 col-sm-12">
+		    <h4 class="text-light"></h4>
+		    <p class="text-muted">Let us be social</p>
+		    <div class="column">
+		    	<i class="fab fa-facebook-f"></i>
+		    	<i class="fab fa-instagram"></i>
+		    	<i class="fab fa-twitter"></i>
+		    	<i class="fab fa-youtube"></i>
+		    </div>
+		    </div>
+		    </div>
+	        </div>
+</footer>
+<script type="text/javascript">
+	/*sticky navigation menu*/
+	let navbar = $('.navbar');
+
+	$(window).scroll(function() {
+		let oTop = $('.section-2').offset().top-window.innerHeight;
+		console.log(oTop);
+		if($(window).scrollTop()> oTop) {
+			navbar.addClass('sticky');
+		} else {
+			navbar.removeClass('sticky');
+		}
+		})
+	let nCount = function(selector)  {
+		$(selector).each(function() {
+          $(this.animate ({
+            Counter:$(this).text()}
+            ,{duration:4000,
+              easing:'swing',
+              step:function(value) {
+              	$(this).text(Math.cell(value));
+              } }
+          	);
+		});
+	}
+	let a= 0;
+	$(window).scroll(function()  {
+		let oTop = $('numbers').offset().top-window.innerHeight;
+		if(a==0 && $(window).scrollTop()>= oTop) {
+			a++;
+			nCount('rect>h1');
+		}
+	})
+</script>
+
+
+
+</body>
+</html>
